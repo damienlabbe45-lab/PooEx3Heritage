@@ -45,7 +45,7 @@ public class City {
     }
 
     public String toString(){
-        return nameCity + " est en " + nameCountry + " et a " + numberResidents + " habitants.";
+        return "ville de " + nameCity + " en " + nameCountry + " ayant " + numberResidents + " habitants.";
     }
 
     public void display(){
