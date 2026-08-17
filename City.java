@@ -4,7 +4,7 @@ public class City {
     private int numberResidents;
 
     public City(String country, String city, int number){
-        setNameCoutry(country);
+        setNameCountry(country);
         setNameCity(city);
         setNumberResidents(number);
     }
@@ -12,14 +12,14 @@ public class City {
     public City(String city, int number){
         setNameCity(city);
         setNumberResidents(number);
-        setNameCoutry("unknow");
+        setNameCountry("unknow");
     }
 
     public void setNameCountryUser(String country){
-        if(nameCountry.equals("unkonw")) setNameCoutry(country);
+        if(this.nameCountry.equals("unknow")) setNameCountry(country);
     }
 
-    private void setNameCoutry(String country){
+    private void setNameCountry(String country){
         nameCountry = country;
     }
 
@@ -32,15 +32,15 @@ public class City {
         else System.out.println("Une ville a au moins 20 000 habitants");
     }
 
-    public String getnameCountry(){
+    public String getNameCountry(){
         return nameCountry;
     }
 
-    public String getnameCity(){
+    public String getNameCity(){
         return nameCity;
     }
 
-    public int getnumberResidents(){
+    public int getNumberResidents(){
         return numberResidents;
     }
 
