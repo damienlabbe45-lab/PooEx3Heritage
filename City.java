@@ -49,7 +49,11 @@ public class City {
     }
 
     public void display(){
-        System.out.println("Ville de Toulouse en france ayant 45000");
+        System.out.println("Ville de Toulouse en France ayant 45000");
+    }
+
+    public void print(){
+        System.out.println("Ville de " + nameCity + " en " + nameCountry + " ayant "  + numberResidents + " habitants");
     }
     
 }
