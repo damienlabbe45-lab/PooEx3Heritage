@@ -4,12 +4,12 @@ public class TestCity {
         City toulouse = new City("Toulouse", 45000);
         City paris = new City("France","Paris", 8900000);
         City barcelone = new City("Espagne","Barcelone", 890000);
-        System.out.println(toulouse.getnumberResidents());
-        System.out.println(paris.getnameCountry());
-        System.out.println(barcelone.getnameCountry());
+        System.out.println(toulouse.getNameCountry());
+        System.out.println(paris.getNumberResidents());
+        System.out.println(barcelone.getNameCity());
         //toulouse.numberResidents = 3566987;
         toulouse.setNameCountryUser("France");
-        System.out.println(toulouse.getnameCountry());
+        System.out.println(toulouse.getNameCountry());
      }
     
 }
