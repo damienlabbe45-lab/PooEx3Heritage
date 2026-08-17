@@ -47,6 +47,11 @@ public class City {
         return numberResidents;
     }
 
+    public String city() {
+        return "City [nameCity=" + nameCity + ", nameCountry=" + nameCountry + ", numberResidents=" + numberResidents
+                + "]";
+    }
+
     public String toString(){
         return "ville de " + nameCity + " en " + nameCountry + " ayant " + numberResidents + " habitants.";
     }
