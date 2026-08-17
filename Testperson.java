@@ -1,4 +1,4 @@
-public class Testperson {
+public class TestPerson {
     public static void main(String[] args) {
         if( args.length > 0) throw new IllegalArgumentException(" pas d'arguments");
         Person emmanuel = new Person("Emmanuel", "Macron", 46, "Elisee à Paris");
