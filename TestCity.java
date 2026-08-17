@@ -15,7 +15,7 @@ public class TestCity {
         paris.print();
         toulouse.print();
         System.out.println(toulouse);//fait afficher l'addresse mémoire de la variable toulouse. On n'est pas commme en python
-        System.out.println(toulouse.toString());
+        System.out.println(toulouse);
      }
     
 }
