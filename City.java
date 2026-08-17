@@ -47,5 +47,9 @@ public class City {
     public String toString(){
         return nameCity + " est en " + nameCountry + " et a " + numberResidents + " habitants.";
     }
+
+    public void display(){
+        System.out.println("Ville de Toulouse en france ayant 45000");
+    }
     
 }
