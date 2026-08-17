@@ -1,16 +1,41 @@
 public class City {
-    public String nameCity;
-    public String nameCountry;
-    public int numberResidents;
+    private String nameCity;
+    private String nameCountry;
+    private int numberResidents;
 
     public City(String country, String city, int number){
-        this.nameCountry = country;
-        this.nameCity = city;
-        this.numberResidents = number;
+        setNameCoutry(country);
+        setNameCity(city);
+        setNumberResidents(number);
+    }
+
+    private void setNameCoutry(String country){
+        nameCountry = country;
+    }
+
+    private void setNameCity(String city){
+        nameCity = city;
+    }
+
+    private void setNumberResidents(int number){
+        if(number > 20000) numberResidents = number;
+        else System.out.println("Une ville a au moins 20 000 habitants");
+    }
+
+    public String getnameCountry(){
+        return nameCountry;
+    }
+
+    public String getnameCity(){
+        return nameCity;
+    }
+
+    public int getnumberResidents(){
+        return numberResidents;
     }
 
     public String toString(){
-        return this.nameCity + " est en " + this.nameCountry + " et a " + this.numberResidents + " habitants.";
+        return nameCity + " est en " + nameCountry + " et a " + numberResidents + " habitants.";
     }
     
 }
