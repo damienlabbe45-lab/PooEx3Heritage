@@ -9,6 +9,8 @@ public class City {
         this.numberResidents = number;
     }
 
-    
+    public String toString(){
+        return this.nameCity + " est en " + this.nameCountry + " et a " + this.numberResidents + " habitants.";
+    }
     
 }
