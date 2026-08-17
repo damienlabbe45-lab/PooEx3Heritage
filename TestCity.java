@@ -7,7 +7,7 @@ public class TestCity {
         System.out.println(toulouse.toString());
         System.out.println(paris.toString());
         System.out.println(barcelone.toString());
-        toulouse.numberResidents = 3566987;
+        //toulouse.numberResidents = 3566987;
         System.out.println(toulouse.toString());
      }
     
