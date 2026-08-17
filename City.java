@@ -9,6 +9,11 @@ public class City {
         setNumberResidents(number);
     }
 
+    public City(String city, int number){
+        setNameCity(city);
+        setNumberResidents(number);
+    }
+
     private void setNameCoutry(String country){
         nameCountry = country;
     }
