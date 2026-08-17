@@ -11,6 +11,10 @@ public class Person {
         this.adress = adress;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress
+                + "]";
+    }
     
 }
