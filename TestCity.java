@@ -10,6 +10,10 @@ public class TestCity {
         //toulouse.numberResidents = 3566987;
         toulouse.setNameCountryUser("France");
         System.out.println(toulouse.getNameCountry());
+        paris.display();
+        barcelone.print();
+        paris.print();
+        toulouse.print();
      }
     
 }
