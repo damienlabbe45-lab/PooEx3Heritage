@@ -55,8 +55,9 @@ public class City {
     }
 
     public String city() {
-        return "City [nameCity=" + nameCity + ", nameCountry=" + nameCountry + ", numberResidents=" + numberResidents
+        if(numberResidents != 0) return "City [nameCity=" + nameCity + ", nameCountry=" + nameCountry + ", numberResidents=" + numberResidents
                 + "]";
+        else return "City [nameCity=" + nameCity + ", nameCountry=" + nameCountry + "]";
     }
 
     public String toString(){
