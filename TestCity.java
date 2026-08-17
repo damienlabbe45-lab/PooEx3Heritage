@@ -14,6 +14,7 @@ public class TestCity {
         barcelone.print();
         paris.print();
         toulouse.print();
+        System.out.println(toulouse);//fait afficher l'addresse mémoire de la variable toulouse. On n'est pas commme en python
      }
     
 }
