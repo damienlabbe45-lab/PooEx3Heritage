@@ -2,17 +2,20 @@ public class City {
     private String nameCity;
     private String nameCountry;
     private int numberResidents;
+    public static int counter = 0;
 
     public City(String country, String city, int number){
         setNameCountry(country);
         setNameCity(city);
         setNumberResidents(number);
+        counter++;
     }
 
     public City(String city, int number){
         setNameCity(city);
         setNumberResidents(number);
         setNameCountry("unknow");
+        counter++;
     }
 
     public void setNameCountryUser(String country){
