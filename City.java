@@ -18,6 +18,13 @@ public class City {
         counter++;
     }
 
+    public City(String city, String country){
+        setNameCity(city);
+        setNameCountry(country);
+        numberResidents = 0;
+        counter++;
+    }
+
     public void setNameCountryUser(String country){
         if(this.nameCountry.equals("unknow")) setNameCountry(country);
     }
