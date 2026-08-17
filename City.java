@@ -12,6 +12,11 @@ public class City {
     public City(String city, int number){
         setNameCity(city);
         setNumberResidents(number);
+        setNameCountry("unknow");
+    }
+
+    public void setNameCountryUser(String country){
+        if(nameCountry.equals("unkonw")) setNameCountry(country);
     }
 
     private void setNameCoutry(String country){
