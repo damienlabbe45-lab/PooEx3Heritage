@@ -26,6 +26,12 @@ public class Capital extends City{
         return landmark;
     }
 
+    @Override
+    public String toString() {
+        return "Capital [nameCity=" + nameCity + ", landmark=" + landmark + ", nameCountry=" + nameCountry
+                + ", numberResidents=" + numberResidents + "]";
+    }
+
     
     
 }
