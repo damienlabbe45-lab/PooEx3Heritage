@@ -22,10 +22,11 @@ public class Person {
 
     @Override
     public String toString() {
-        if(cityBirth != null)return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress
-                + ", cityBirth=" + cityBirth + "]";
+        if(cityBirth != null)return lastName +" "+ firstName + " "  + age + " ans " + adress + ", ville de naissance :" + cityBirth.city();
         else return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress
                 +  "]";
     }
+
+ 
     
 }
