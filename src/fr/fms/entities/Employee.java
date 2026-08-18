@@ -9,7 +9,7 @@ public class Employee extends Person{
         this.entreprise = entreprise;
         this.salaries = salaries;
     }
-    
+
     public Employee(String name, String firstname, int age, String adress, City city, String entreprise,
             double salaries) {
         super(name, firstname, age, adress, city);
@@ -19,8 +19,7 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        return "Employee [lastName=" + lastName + ", entreprise=" + entreprise + ", salaries=" + salaries
-                + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress + ", cityBirth=" + cityBirth + "]";
+        return super.toString() + ", Entreprise: " + entreprise + ", salaire :  " + salaries;
     }
 
     
