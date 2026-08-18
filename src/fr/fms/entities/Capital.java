@@ -28,9 +28,12 @@ public class Capital extends City{
 
     @Override
     public String toString() {
-        return nameCity + ", " + nameCountry + ", " + numberResidents + " d'habitants , monument: " + landmark ;
+        return super.toString() + ", monument: " + landmark ;
     }
 
-    
+    @Override
+    public String city() {
+        return super.city() + ", monument: " + landmark ;
+    }
     
 }
