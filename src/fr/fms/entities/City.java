@@ -2,9 +2,9 @@ package fr.fms.entities;
 
 
 public class City {
-    private String nameCity;
-    private String nameCountry;
-    private int numberResidents;
+    protected String nameCity;
+    protected String nameCountry;
+    protected int numberResidents;
     public static int counter = 0;
 
     public City(String country, String city, int number){
