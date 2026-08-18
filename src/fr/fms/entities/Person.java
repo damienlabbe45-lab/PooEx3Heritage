@@ -1,10 +1,10 @@
 package fr.fms.entities;
 public class Person {
-    private String lastName;
-    private String firstName;
-    private int age;
-    private String adress;
-    private City cityBirth;
+    protected String lastName;
+    protected String firstName;
+    protected int age;
+    protected String adress;
+    protected City cityBirth;
 
     public Person(String name, String firstname, int age, String adress){
         this.lastName = name;
