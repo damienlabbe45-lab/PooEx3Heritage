@@ -72,7 +72,7 @@ public class City {
     }
 
     public void print(){
-        System.out.println("Ville de " + nameCity + " en " + nameCountry + " ayant "  + numberResidents + " habitants");
+        System.out.println("La ville de " + nameCity + " en " + nameCountry + " ayant "  + numberResidents + " habitants");
     }
     
 }
