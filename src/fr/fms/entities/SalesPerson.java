@@ -1,6 +1,6 @@
 package fr.fms.entities;
 
-public class SalesPerson extends Person{
+class SalesPerson extends Person{
 
     String entreprise;
     double revenue;
