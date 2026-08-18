@@ -1,3 +1,6 @@
+package fr.fms.entities;
+
+
 public class City {
     private String nameCity;
     private String nameCountry;

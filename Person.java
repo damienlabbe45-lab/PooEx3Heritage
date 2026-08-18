@@ -1,3 +1,4 @@
+package fr.fms.entities;
 public class Person {
     private String lastName;
     private String firstName;
