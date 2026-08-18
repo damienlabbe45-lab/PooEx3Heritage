@@ -28,19 +28,19 @@ public class City {
         counter++;
     }
 
-    public void setNameCountryUser(String country){
+    protected void setNameCountryUser(String country){
         if(this.nameCountry.equals("unknow")) setNameCountry(country);
     }
 
-    private void setNameCountry(String country){
+    protected void setNameCountry(String country){
         nameCountry = country;
     }
 
-    private void setNameCity(String city){
+    protected void setNameCity(String city){
         nameCity = city;
     }
 
-    private void setNumberResidents(int number){
+    protected void setNumberResidents(int number){
         if(number > 20000) numberResidents = number;
         else System.out.println("Une ville a au moins 20 000 habitants");
     }
