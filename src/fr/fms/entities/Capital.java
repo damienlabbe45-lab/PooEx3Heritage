@@ -18,6 +18,14 @@ public class Capital extends City{
         this.landmark = landmark;
     }
 
+    public void setLandmark(String landmark) {
+        this.landmark = landmark;
+    }
+
+    public String getLandmark() {
+        return landmark;
+    }
+
     
     
 }
