@@ -1,5 +1,5 @@
 package fr.fms.entities;
 
-public class Employee {
+public class Employee extends Person{
     
 }
