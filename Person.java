@@ -27,6 +27,14 @@ public class Person {
                 +  "]";
     }
 
- 
+    public String getAdress() {
+        return adress;
+    }
+
+    public City getCityBirth() {
+        return cityBirth;
+    }
+
+    
     
 }
