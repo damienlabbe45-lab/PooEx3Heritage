@@ -18,6 +18,10 @@ public class Test {
         System.out.println(roger);
         System.out.println(gate);
         System.out.println(diego);
+        SalesPerson musk = new SalesPerson("Elon", "Musk", 49, "habitant à la Silicon Valley",paris,
+         "SpaceX", 6.8);
+
+        System.out.println(musk);
      }
     
 }
