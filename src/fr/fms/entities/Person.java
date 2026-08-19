@@ -1,19 +1,19 @@
 package fr.fms.entities;
-public class Person {
+public  abstract class Person {
     protected String lastName;
     protected String firstName;
     protected int age;
     protected String adress;
     protected City cityBirth;
 
-    public Person(String name, String firstname, int age, String adress){
+    protected Person(String name, String firstname, int age, String adress){
         this.lastName = name;
         this.firstName = firstname;
         this.age = age;
         this.adress = adress;
     }
 
-    public Person(String name, String firstname, int age, String adress, City city){
+    protected Person(String name, String firstname, int age, String adress, City city){
         this.lastName = name;
         this.firstName = firstname;
         this.age = age;
@@ -36,6 +36,6 @@ public class Person {
         return cityBirth;
     }
 
-    
+    public abstract String renumeration();
     
 }
