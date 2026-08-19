@@ -32,8 +32,8 @@ public class Capital extends City{
     }
 
     @Override
-    public String city() {
-        return super.city() + ", monument: " + landmark ;
+    public String residents() {
+        return super.residents() + ", monument: " + landmark ;
     }
     
 }
