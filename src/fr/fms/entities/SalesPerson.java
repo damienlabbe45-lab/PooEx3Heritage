@@ -4,6 +4,8 @@ class SalesPerson extends Person{
 
     String entreprise;
     double revenue;
+    private static double REVENUMIN = 0.1;
+    private static double REVENUMAX = 15.0;
 
     public SalesPerson(String name, String firstname, int age, String adress, String entreprise, double revenue) {
         super(name, firstname, age, adress);
@@ -21,6 +23,12 @@ class SalesPerson extends Person{
     @Override
     public String toString() {
         return super.toString() + ", Entreprise : " + entreprise + ", % CA :" + revenue;
+    }
+
+    public void setRevenue(double revenue) {
+        if(revenue > REVENUMAX && REVENUMIN < revenue)this.revenue = revenue;
+        else if(REVENUMIN < revenue) System.out.println("Le revenu n'est pas assez élevé");
+        else System.out.println("Le revenu est trop élevé, l'entreprise va faire faillite");
     }
     
     
