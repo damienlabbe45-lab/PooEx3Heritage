@@ -12,14 +12,14 @@ public class Test {
         Employee roger = new Employee("Roger", "Croissant", 89, "habite à Brest", paris, " boulangerie de Brest",
             23456.78);
         Employee gate = new  Employee("Gate", "Bill", 65, "habite aux USA", londres, 
-        "Fondation B&M", 120086.54);
+        "Fondation B&M", 1200000000086.54);
         Employee diego = new Employee("La vegas", "Diego", 34, "habite au mexique", barcelone, 
         "tortillas", 5677.98);
         System.out.println(roger);
         System.out.println(gate);
         System.out.println(diego);
         SalesPerson musk = new SalesPerson("Elon", "Musk", 49, "habitant à la Silicon Valley",paris,
-         "SpaceX", 6.8);
+         "SpaceX", 16.8);
 
         System.out.println(musk);
      }
