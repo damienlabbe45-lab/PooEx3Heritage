@@ -19,9 +19,9 @@ public class TestEntities {
         SalesPerson lawrence = new SalesPerson("Lawrence", "Jennifer", 30, "habitant Louisville", 
         new City("New York", "USA"), "Alphabet",12.9);
         Person[] personality = {emmanuel,sarkozy,johnson, depardieu, kravitz, lawrence};
-        for(Person residents:personality)System.out.println(residents.renumeration());
+        for(Person residents:personality)System.out.println(residents.remuneration());
         List<Person> pepol = Arrays.asList(sarkozy,emmanuel,depardieu,johnson,lawrence,kravitz);
-        for(Person residents:pepol)System.out.println(residents.renumeration());
+        for(Person residents:pepol)System.out.println(residents.remuneration());
 
     }
 }
