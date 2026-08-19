@@ -31,7 +31,9 @@ public class Employee extends Person{
         
     }
 
-    
-
+    @Override
+    public String renumeration(){
+        return "le salaire mensuelle de " + lastName + " " + firstName + " est de " + ((1 - 0.2) * salaries/12 );
+    }
     
 }
