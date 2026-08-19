@@ -3,23 +3,32 @@ package fr.fms.entities;
 public class Employee extends Person{
     String entreprise;
     double salaries;
+    private static double SALARIESMIN = 180.3;
+    private static double SALARIESMAX = 4567843.01 ;
     
     public Employee(String name, String firstname, int age, String adress, String entreprise, double salaries) {
         super(name, firstname, age, adress);
         this.entreprise = entreprise;
-        this.salaries = salaries;
+        setSalaries(salaries);
     }
 
     public Employee(String name, String firstname, int age, String adress, City city, String entreprise,
             double salaries) {
         super(name, firstname, age, adress, city);
         this.entreprise = entreprise;
-        this.salaries = salaries;
+        setSalaries(salaries);
     }
 
     @Override
     public String toString() {
         return super.toString() + ", Entreprise: " + entreprise + ", salaire :  " + salaries;
+    }
+
+    public void setSalaries(double salaries) {
+        if(salaries > SALARIESMIN && SALARIESMAX > salaries)this.salaries = salaries;
+        else if(SALARIESMAX > salaries) System.out.println("Le salaire n'est pas assez élevé");
+        else System.out.println("Le salaire est trop élevé");
+        
     }
 
     
