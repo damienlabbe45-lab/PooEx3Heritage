@@ -75,4 +75,7 @@ public class City {
         System.out.println("La ville de " + nameCity + " en " + nameCountry + " ayant "  + numberResidents + " habitants");
     }
     
+    public String residents(){
+        return nameCity + ", " + nameCountry ;
+    }
 }
