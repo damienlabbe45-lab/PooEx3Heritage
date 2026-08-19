@@ -26,7 +26,7 @@ class SalesPerson extends Person{
     }
 
     public void setRevenue(double revenue) {
-        if(revenue < REVENUMAX && REVENUMIN > revenue)this.revenue = revenue;
+        if(revenue < REVENUMAX && revenue > REVENUMIN)this.revenue = revenue;
         else if(REVENUMAX > revenue) System.out.println("Le revenu n'est pas assez élevé");
         else System.out.println("Le revenu est trop élevé, l'entreprise va faire faillite");
     }
