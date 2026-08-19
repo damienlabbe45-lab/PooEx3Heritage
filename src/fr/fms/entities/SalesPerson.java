@@ -10,14 +10,14 @@ class SalesPerson extends Person{
     public SalesPerson(String name, String firstname, int age, String adress, String entreprise, double revenue) {
         super(name, firstname, age, adress);
         this.entreprise = entreprise;
-        this.revenue = revenue;
+        setRevenue(revenue);
     }
 
     public SalesPerson(String name, String firstname, int age, String adress, City city, String entreprise,
             double revenue) {
         super(name, firstname, age, adress, city);
         this.entreprise = entreprise;
-        this.revenue = revenue;
+        setRevenue(revenue);
     }
 
     @Override
