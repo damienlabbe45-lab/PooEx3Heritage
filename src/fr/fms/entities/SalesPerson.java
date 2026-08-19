@@ -31,5 +31,8 @@ class SalesPerson extends Person{
         else System.out.println("Le revenu est trop élevé, l'entreprise va faire faillite");
     }
     
-    
+    @Override
+    public String renumeration(){
+        return "le salaire mensuelle de " + lastName + " " + firstName + " est de " + (890006598 * revenue);
+    }
 }
