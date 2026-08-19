@@ -33,6 +33,6 @@ class SalesPerson extends Person{
     
     @Override
     public String renumeration(){
-        return "le salaire mensuelle de " + lastName + " " + firstName + " est de " + (890006598 * revenue);
+        return "le salaire mensuelle de " + lastName + " " + firstName + " est de " + ((890006598 * revenue)/12);
     }
 }
